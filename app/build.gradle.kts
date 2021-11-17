@@ -13,8 +13,8 @@ repositories {
         //     password = "7hmvhbiaem2czyt6byzyl6sqoa35m5z5crhq3oyzvzvimxmao3fq"
         // }
         credentials { 
-            username "gradletest" 
-            password System.getenv("SYSTEM_ACCESSTOKEN") != null ? System.getenv("SYSTEM_ACCESSTOKEN") : vstsMavenAccessToken 
+            username  = "gradletest" 
+            password  = System.getenv("SYSTEM_ACCESSTOKEN") 
         } 
 }
 
