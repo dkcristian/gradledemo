@@ -8,9 +8,9 @@ repositories {
     url = uri("https://pkgs.dev.azure.com/cristianhenrique/testejavaartifacts/_packaging/gradletest/maven/v1")
     name = "gradletest"
     authentication {
-        basic(BasicAuthentication::class.java)
+        create(basic, BasicAuthentication::class.java)
+        }
     }
-}
 }
 
 dependencies {
