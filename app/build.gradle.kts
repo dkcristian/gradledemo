@@ -6,7 +6,7 @@ plugins {
 repositories {
     maven {
     url = uri("https://pkgs.dev.azure.com/cristianhenrique/testejavaartifacts/_packaging/gradletest/maven/v1")
-    name = gradletest
+    name = "gradletest"
     authentication {
         basic(BasicAuthentication)
     }
