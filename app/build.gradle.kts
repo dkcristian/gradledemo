@@ -5,13 +5,14 @@ plugins {
 
 repositories {
     google()
-    maven {
-    url = uri("https://pkgs.dev.azure.com/cristianhenrique/testejavaartifacts/_packaging/gradletest/maven/v1")
-    name = "gradletest"
-    authentication {
-        create<BasicAuthentication>("basic")
-        }
-    }
+    mavenCentral()
+    // maven {
+    // url = uri("https://pkgs.dev.azure.com/cristianhenrique/testejavaartifacts/_packaging/gradletest/maven/v1")
+    // name = "gradletest"
+    // authentication {
+    //     create<BasicAuthentication>("basic")
+    //     }
+    // }
 }
 
 dependencies {
