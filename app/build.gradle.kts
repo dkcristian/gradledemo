@@ -9,9 +9,9 @@ repositories {
     maven {
         credentials { 
             username  = "gradletest" 
-            password  = System.getenv("SYSTEM_ACCESSTOKEN") 
-        } 
-}
+            password  = System.getenv(SYSTEM_ACCESSTOKEN)
+         } 
+    }
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.7.2") // <3>
