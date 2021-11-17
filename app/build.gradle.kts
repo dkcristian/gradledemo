@@ -6,11 +6,13 @@ plugins {
 repositories {
     google()
     // mavenCentral()
+
+    val teste = System.getenv("SYSTEM_ACCESSTOKEN") != null
+
     maven {
         credentials { 
             username  = "gradletest"
-            password  = System.getenv("SYSTEM_ACCESSTOKEN") != null ? System.getenv("SYSTEM_ACCESSTOKEN") : vstsMavenAccessToken
-         } 
+            password  = teste
     }
 
 dependencies {
