@@ -8,6 +8,7 @@ repositories {
     // mavenCentral()
 
     val teste = System.getenv("SYSTEM_ACCESSTOKEN") != null
+    fun print(message: teste)
 
     maven {
         credentials { 
