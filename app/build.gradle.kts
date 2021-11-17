@@ -5,8 +5,8 @@ plugins {
 
 repositories {
     maven {
-    url 'https://pkgs.dev.azure.com/cristianhenrique/testejavaartifacts/_packaging/gradletest/maven/v1'
-    name 'gradletest'
+    url = https://pkgs.dev.azure.com/cristianhenrique/testejavaartifacts/_packaging/gradletest/maven/v1
+    name = gradletest
     authentication {
         basic(BasicAuthentication)
     }
