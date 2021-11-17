@@ -8,8 +8,8 @@ repositories {
     // mavenCentral()
     maven {
         credentials { 
-            username  = "gradletest" 
-            password  = System.getenv(SYSTEM_ACCESSTOKEN)
+            username  = "gradletest"
+            password  = System.getenv("SYSTEM_ACCESSTOKEN") != null ? System.getenv("SYSTEM_ACCESSTOKEN") : vstsMavenAccessToken
          } 
     }
 
