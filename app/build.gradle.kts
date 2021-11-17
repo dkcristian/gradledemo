@@ -7,15 +7,15 @@ repositories {
     google()
     // mavenCentral()
     maven {
-    url = uri("https://pkgs.dev.azure.com/cristianhenrique/testejavaartifacts/_packaging/gradletest/maven/v1")
-        credentials {
-            username = "gradletest"
-            password = "7hmvhbiaem2czyt6byzyl6sqoa35m5z5crhq3oyzvzvimxmao3fq"
-        }
-        // credentials { 
-        //     username  = "gradletest" 
-        //     password  = System.getenv("SYSTEM_ACCESSTOKEN") 
-        // } 
+    // url = uri("https://pkgs.dev.azure.com/cristianhenrique/testejavaartifacts/_packaging/gradletest/maven/v1")
+    //     credentials {
+    //         username = "gradletest"
+    //         password = "7hmvhbiaem2czyt6byzyl6sqoa35m5z5crhq3oyzvzvimxmao3fq"
+    //     }
+        credentials { 
+            username  = "gradletest" 
+            password  = System.getenv("SYSTEM_ACCESSTOKEN") 
+        } 
 }
 
 dependencies {
